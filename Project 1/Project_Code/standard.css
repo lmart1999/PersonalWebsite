@@ -1,0 +1,161 @@
+div {
+    overflow: auto;
+    border-radius: .5em;
+}
+#navigation {
+    align-items: center;
+    width: auto;
+    background-color: cadetblue;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-top-left-radius: 0em;
+    border-top-right-radius: 0em;
+    
+}
+#mainHeader {
+    background-image: url(images/banner1.JPG);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 10em;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    border-bottom-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+    
+}
+#pageHeading{
+     margin-left: auto;
+    text-align: center;
+    font-size: 4em;
+
+}
+
+p.navigation {
+    height: 1em;
+    text-align: center;
+    background-color: transparent;
+}
+a.nav {
+    padding-right: 4em;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+}
+
+body {
+  background-color: lightskyblue;
+}
+
+h1 {
+  color: black;
+  font-weight: 900;
+  margin-left: 40px;
+} 
+
+
+h2, ul {
+  margin-left: 40px;
+
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h4 {
+    
+  margin-left: 40px;
+  font-weight: 300;
+
+}
+
+strong {
+    font-style: italic;
+}
+
+div {
+  background-color: white;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 1.4em;
+    padding-top: .6em;
+    padding-bottom: .6em;
+}
+
+img {
+    padding-top: .5em;
+    padding-left: 3em;
+    padding-bottom: .5em;
+
+}
+
+a {
+    color: deepskyblue;
+}
+
+h3 {
+    color: gray;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  background-color: white;
+  margin-left: 40px;
+}
+
+p.normal {
+  font-style: normal;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+p.oblique {
+  font-style: oblique;
+}
+
+img.logo {
+    background-color: transparent;
+    float: left;
+}
+
+#disclaimer {
+    padding-left: 2em;
+}
+
+#aboutMe {
+    width: 55em;
+    padding-left: 0em;
+    margin-left: 0em;
+    float: left;
+
+
+}
+
+#image {
+    width: 25em;
+    padding-right: 0em;
+    margin-right: 0em;
+    float: right;
+
+}
+
+#intro {
+    margin-left: 0em;
+    text-indent: 2.5em;
+    border-style: groove;
+    border-color: cadetblue;
+    border-radius: 1.5em;
+    border-width: medium;
+    padding-top: 1.5em;
+    padding-bottom: 3em;
+    padding-left:1em;
+    padding-right: 1em;
+    
+}
+#homePage {
+    width: 50%;
+    height: auto;
+}

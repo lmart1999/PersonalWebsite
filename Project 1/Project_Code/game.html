@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+	<title>Guessing Game</title>
+    <link rel="stylesheet" type="text/css" href="jscript.css">
+    <script src="game.js"></script>
+    
+    
+	</head>
+<body>
+<!-- this is the markup document that should contains a form
+     that represents the choices available on the 
+     Lunch Special paper form -->
+    <div class="container">
+        <div id="mainHeader">
+            <h1>Guessing Game<br></h1>
+        </div>
+     
+        <div id="navigation">
+        
+            <p class="navigation"><a href="index.html">Home</a> &nbsp; <a href="resume.html">Resume</a> &nbsp; 
+                <a href="gallery.html">Gallery</a> &nbsp; <a href="converter.html">Converter</a> &nbsp; <a href="calculator.html">Calculator</a>
+                &nbsp; <a href="game.html"><strong>Game</strong></a> &nbsp; <a href="contactMe.html">Contact Me</a></p>
+        </div>
+        <div id="instructions">
+            <h4>How to Play:</h4>
+            
+            
+            <ul>
+                <li><h5 class="instr">Select the number of guesses you will get (3, 5, 7)</h5></li>
+                <li><h5 class="instr">Select the range of numbers (1-10, 1-100, or 1-1000)</h5></li>
+                <li><h5 class="instr">Enter your guess and adjust according to feedback </h5></li>
+            </ul>
+            
+        </div>
+
+        
+    
+	  <div class="main">
+          <form action="#" method="post" name="lunch_special" id="form_id" class="form_class" >
+              <label>Guess :</label>
+              <input type="text" name="num1" id="guess"  /><br/>
+              
+              <input type="text" name="num3" id="numGuesses" value=" "  hidden  />
+              <input type="text" name="num3" id="numGuessesR" value="3"   hidden />
+              <input type="text" name="num3" id="rand" value="10" hidden  />
+
+              
+             
+              
+              <div id="wrapperG">
+                  
+                <div id="guesses">
+                    <h4>Guesses</h4>
+                 
+                     <input type="button" name="guesses" class="F" id="guess3" value="3" onclick="guesses3();"><br>
+                     <input type="button" name="guesses" class="F" id="guess5" value="5" onclick="guesses5();"><br>
+                    <input type="button" name="guesses" class="F" id="guess7" value="7" onclick="guesses7();">
+                </div>
+                  
+                  
+                <div id="range">
+                    <h4>Range</h4>
+                
+                    <input type="button" name="range10" class="T" id="range10" value="10" onclick="frange10();"><br>
+                     <input type="button" name="range100" class="T" id="range100" value="100"  onclick="frange100();"><br>
+                     <input type="button" name="range1000" class="T" id="range1000" value="1000"  onclick="frange1000();">
+                    
+                </div>  
+              </div>
+              <br>
+            
+              <input type="button" name="Calculate" id="check" value="Guess" onclick="checkGuess();" /> <br>
+              <input type="button" name="Calculate" id="calculate" value="New Game" onclick="newGame();" />
+
+          </form>
+	  </div> 
+	</div>
+    
+    <h3><br>Number of Guesses Remaining:</h3>
+    <h2 id="guessesR"></h2>
+        
+    <h3>Hint<br></h3>
+
+    <h4 id="answers"> </h4>
+    
+   
+    
+	 
+
+</body>
+</html>

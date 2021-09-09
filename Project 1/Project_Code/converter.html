@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+	<title>Converter</title>
+    <link rel="stylesheet" type="text/css" href="jscript.css">
+    <script src="converter.js"></script>
+    
+    
+	</head>
+<body>
+<!-- this is the markup document that should contains a form
+     that represents the choices available on the 
+     Lunch Special paper form -->
+    <div class="container">
+        <div id="mainHeader">
+            <h1>Conversion<br></h1>
+        </div>
+         <div id="navigation">
+        
+             <p class="navigation"><a href="index.html">Home</a> &nbsp; <a href="resume.html">Resume</a> &nbsp; 
+                 <a href="gallery.html">Gallery</a> &nbsp; <a href="converter.html"><strong>Converter</strong></a> &nbsp; <a href="calculator.html">Calculator</a>
+                 &nbsp; <a href="game.html">Game</a> &nbsp; <a href="contactMe.html">Contact Me</a></p>
+        </div>
+    
+        <div id="instructions"><h5>Select what you are converting to and from and enter a number to be converted</h5></div>
+
+        
+    
+	  <div class="main">
+          <form action="#" method="post" name="lunch_special" id="form_id" class="form_class" >
+              <label>Input :</label>
+              <input type="text" name="num1" id="num1"  /><br/>		
+              <input type="text" name="num2" id="BF" value=""  hidden/> <br>
+              <input type="text" name="num3" id="BT"  value=""  hidden/>
+              
+              <div id="wrapper">
+                  
+                <div id="inputFrom">
+                    <h4>Convert From</h4>
+                 
+                     <input type="button" name="convertFromB" class="F" id="convertFromB" value="Binary" onclick="fromB();"><br>
+                     <input type="button" name="convertFromO" class="F" id="convertFromO" value="Octal" onclick="fromO();"><br>
+                    <input type="button" name="convertFromD" class="F" id="convertFromD" value="Decimal" onclick="fromD();"><br>
+                     <input type="button" name="convertFromH" class="F" id="convertFromH" value="Hexadecimal" onclick="fromH();"><br>
+                </div>
+                  
+                  
+                <div id="inputTo">
+                    <h4>Convert To</h4>
+                
+                  <input type="button" name="convertToB" class="T" id="convertToB" value="Binary" onclick="toB();"><br>
+                     <input type="button" name="convertToO" class="T" id="convertToO" value="Octal"  onclick="toO();"><br>
+                     <input type="button" name="convertToD" class="T" id="convertToD" value="Decimal"  onclick="toD();"><br>
+                    <input type="button" name="convertToH" class="T" id="convertToH" value="Hexadecimal"  onclick="toH();"><br>
+                    
+                </div>  
+              </div>
+              <br>
+      		  <input type="button" name="Calculate" id="calculate" value="Calculate" onclick="getValues();" />
+
+          </form>
+	  </div> 
+	</div>
+    
+   
+    
+    <h3><br>Solutions<br></h3>
+    <h4 id="answers"> </h4>
+    
+   
+    
+	 
+
+</body>
+</html>

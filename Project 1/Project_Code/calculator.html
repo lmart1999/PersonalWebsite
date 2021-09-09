@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+	<title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="jscript.css">
+    <script src="calculator.js"></script>
+    
+    
+	</head>
+<body>
+<!-- this is the markup document that should contains a form
+     that represents the choices available on the 
+     Lunch Special paper form -->
+    
+    <div class="container">
+        <div id="mainHeader">
+            <h1>Calculator<br></h1>
+        </div>
+        <div id="navigation">
+        
+            <p class="navigation"><a href="index.html">Home</a> &nbsp; <a href="resume.html">Resume</a> &nbsp; 
+                <a href="gallery.html">Gallery</a> &nbsp; <a href="converter.html">Converter</a> &nbsp; <a href="calculator.html"><strong>Calculator</strong></a>
+                &nbsp; <a href="game.html">Game</a> &nbsp; <a href="contactMe.html">Contact Me</a></p>
+        </div>
+    
+        <div id="instructions">
+            <h4>Enter your two numbers and select an operation </h4>
+            
+            <ul>
+                <li><h5 class="instr">For Subtraction the second number will be subtracted from the first</h5></li>
+                <li><h5 class="instr">For division the first number will be divided by the second</h5></li>
+                <li><h5 class="instr">For powers the first number will be raised to the power of the second number</h5> </li>
+                <li><h5 class="instr">For roots first number will be rooted by the second</h5></li>
+            </ul>
+            
+        </div>
+
+        
+    
+	  <div class="main">
+          <form action="#" method="post" name="lunch_special" id="form_id" class="form_class" >
+              <label>Input 1 :</label>
+              <input type="text" name="num1" id="num1"  /><br/>
+              <label>Input 2 :</label>
+              <input type="text" name="num2" id="num2" /> <br>
+            
+              <input type="text" name="num3" id="num3"  hidden  />
+
+             
+              
+              <div id="wrapper">
+                  
+                <div id="operations">
+                    <h4>Operation</h4>
+                 
+                    <div id="left">
+                        <input type="button" name="add" class="calc" id="add" value=" +" onclick="adder();"><br>
+                        <input type="button" name="sub" class="calc" id="subtract" value=" -" onclick="subtracter();"><br>
+                        <input type="button" name="mult" class="calc" id="multiply" value=" *" onclick="multiplier();"><br>
+                    </div>
+                    <div id="right">
+                        <input type="button" name="div" class="calc" id="divide" value=" /" onclick="divider();"><br>
+                        <input type="button" name="pow" class="calc" id="power" value=" ^" onclick="powerf1();"><br>     
+                        <input type="button" name="root" class="calc" id="root" value=" &#8730; "  onclick="rootf();"><br>
+                    </div>
+                <br>
+                </div>
+                  
+                  
+                
+                
+                  
+                    
+              </div>
+              <br>
+              <input type="button" name="convertToD" class="T" id="copy1" value="Copy answer to 1st input"  onclick="copyNum1();"><br>
+              <input type="button" name="convertToH" class="T" id="copy2" value="Copy answer to 2nd input"  onclick="copyNum2();"><br>
+      		 
+
+          </form>
+	  </div> 
+	</div>
+    
+    <h3><br>Solutions<br></h3>
+    <h4 id="answers"> </h4>
+    
+   
+    
+	 
+
+</body>
+</html>

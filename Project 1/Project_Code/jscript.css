@@ -1,0 +1,215 @@
+
+
+:root {
+    --transition: all 0.3s linear;
+    --clr-black: #222;
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+
+}
+
+
+body {
+    background-color:  hsl(210, 36%, 96%)    
+
+}
+div {
+    overflow: auto;
+}
+#navigation {
+    align-items: center;
+    width: 100%;
+    background-color: cadetblue;
+    padding-bottom: .6em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+
+    
+}
+#mainHeader {
+    background-image: url(images/banner1.JPG);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 10em;
+}
+h1 {
+    font-size: 4em;
+}
+p.navigation {
+    height: 1em;
+    text-align: center;
+}
+a {
+    padding-right: 4em;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+}
+
+#wrapper, #wrapperG {
+    width: 25em;
+    overflow: auto;
+    padding-bottom: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-right: auto;
+    margin-left: auto;
+}
+#wrapperG {
+    width: 15em;
+    
+}
+
+#inputFrom, #guesses {
+    margin-top: 1%;
+    float: left;
+    margin-right: auto;
+    margin-left: auto;    
+    text-align: center;
+    height: 200px;
+    width: auto;
+    padding-left: 7%;
+    padding-right: 7%;
+    height: 200px;
+    border-style: groove;
+    border-color: cadetblue;
+    border-radius: 5px;
+    border-width: medium;
+
+
+}
+
+#operations {
+    padding-left: 2%;
+    padding-right: 2%;
+    border-style: groove;
+    border-color: cadetblue;
+    border-radius: 5px;
+    border-width: medium;
+    width: 15em;
+    margin-top: 1%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#inputTo, #range {
+    margin-top: 1%;
+    float:right;
+    text-align: center;
+    height: 200px;
+    width: auto;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: groove;
+    border-color: cadetblue;
+    border-radius: 5px;
+    border-width: medium;
+}
+input {
+    margin-bottom: 10px;
+    width: auto;
+}
+
+#guesses, #range {
+    height: 175px;
+}
+
+
+
+#num1 {
+    margin-left: .5%;
+}
+
+p{
+    margin-left: 5%;
+}
+
+h1,h2, h5, h3,h4, input,label, form, #main {
+    margin-left: auto;
+    text-align: center;
+}
+
+h5.instr {
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#calculate, #check {
+    text-transform: uppercase;
+  background: transparent;
+  color: var(--clr-black);
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  transition: var(--transition);
+  font-size: 0.875rem;
+  border: 2px solid var(--clr-black);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+}
+#calculate:hover, .T:hover, .F:hover, .calc:hover, #check:hover {
+    background: black;
+    color: white;
+}
+
+
+.calc:focus {
+    background: black;
+    color: white;
+}
+
+.T, .F, .calc{
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--clr-black);
+  padding: 0.2rem 0.25rem;
+  margin-top: .5em;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  transition: var(--transition);
+  font-size: 0.575rem;
+  border: 1px groove var(--clr-black);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+}
+.calc {
+    padding: .2rem .25rem .25rem .25rem;
+}
+
+li {
+    text-align: left;
+    margin-left: 40%;
+}
+#left {
+    margin-top: 1em;
+    text-align: center;
+    margin: auto;
+    width: 5em;
+    margin-left: 10%;
+    margin-bottom: 1em;
+    float: left;
+    
+}
+#right {
+    margin-top: 1em;
+    text-align: center;
+    margin: auto;
+    margin-right: 10%;
+    float: right;
+    padding: 1em 1em;
+    width: 5em;
+}
+#guesses, #range {
+    width:4em;
+}
+
+strong {
+    font-style: italic;
+    font-weight: bolder;
+}
